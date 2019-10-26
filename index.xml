@@ -1,0 +1,1590 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mogeko`s Blog on Mogeko`s Blog</title>
+    <link>https://mogeko.me/</link>
+    <description>Recent content in Mogeko`s Blog on Mogeko`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 27 Oct 2019 00:21:43 +0800</lastBuildDate>
+    <atom:link href="https://mogeko.me/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>明日方舟: 基建排班计算公式</title>
+      <link>https://mogeko.me/2019/074/</link>
+      <pubDate>Sun, 27 Oct 2019 00:21:43 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/074/</guid>
+      <description>&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/074/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;众所周知，方舟的很多干员都有基建技能。而带有基建技能的干员的工作效率远远超过没有基建技能的干员。因此&lt;strong&gt;想要获得最高的收益，就要让基建技能好的干员尽可能多的上班。&lt;/strong&gt;那么如何才能保证基建技能好的干员尽可能多的上班呢？为此，我写了一个简单的公式：&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Fx&#34; src=&#34;https://mogeko.github.io/blog-images/r/074/fx0.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;红字是未知数，也就是我们需要计算的部分，其余的都是已知数。&lt;/p&gt;
+
+&lt;p&gt;下面结合我自己的情况简单计算一下，以贸易站为例 (制造站也是一个道理)。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Infrastructure&#34; src=&#34;https://mogeko.github.io/blog-images/r/074/&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;先简单介绍一下我的基本情况。我基建所有建筑均是满级，生产部分采用的是 &lt;strong&gt;2 + 4 的模式&lt;/strong&gt;，也就是 &lt;strong&gt;2 个贸易站 + 4 个制造站&lt;/strong&gt;。然后&lt;strong&gt;我根据每个干员的基建技能为控制中心排了 2 个班次 (C1、C2)，为贸易站排了 3 个班次 (B1、B2、B3)&lt;/strong&gt;，以下分别是每个班次的成员和最终的基建技能。&lt;/p&gt;
+
+&lt;p&gt;控制中心：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;班次&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;员工&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;最终基建技能为&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;C1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;阿米娅、红和清道夫&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;贸易站订单效率 +7%&lt;/strong&gt; 和&lt;strong&gt;全员每小时心情消耗 -0.15&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;C2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;陈、诗怀雅和杜宾&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;贸易站订单效率 +7%&lt;/strong&gt; 和&lt;strong&gt;全员每小时心情消耗 -0.15&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;贸易站：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;班次&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;员工&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;最终的基建技能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;B1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;古米、空爆和月见夜&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;订单效率 +90%&lt;/strong&gt; 和&lt;strong&gt;每小时心情消耗 -0.25&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;B2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;芬、夜刀和慕斯&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;订单效率 +90%&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;B3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;银灰、远山和玫兰莎&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;订单效率 +80%&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;因为控制中心有两个班次，并且加成的效果都是一样的，所以只需要&lt;strong&gt;每班上 24 个小时&lt;/strong&gt;，定时换班即可。而贸易站这边情况就要复杂一点了。通过比较我们可以发现&lt;strong&gt;获取订单效率最高的班次是 B1 和 B2 (加上控制中心给的 +7% 可以达到 +100%)&lt;/strong&gt;，因此排班的关键变成了&lt;strong&gt;如何让 B1 和 B2 尽可能多的上班？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;我们套用公式，&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Fx&#34; src=&#34;https://mogeko.github.io/blog-images/r/074/fx1.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Fx&#34; src=&#34;https://mogeko.github.io/blog-images/r/074/fx2.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;经过计算得知，&lt;strong&gt;B1 和 B2 的最佳工作时间分别是 21 个小时和 20 个小时&lt;/strong&gt;，换句话说&lt;strong&gt;B1 每天只需要休息 3 个小时，B2 每天只需要休息 4 个小时，一共 7 个小时&lt;/strong&gt;，而这 7 个小时就是 B3 上班的时间。&lt;span class=&#34;spoiler&#34; &gt;毕竟我也不是什么恶魔&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;然后根据博士的作息时间进行排班：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;时间点&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;班次变化&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;12: 00&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;B2 下班，B3 上班&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;16: 00&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;B1 下班，B2 上班&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;19: 00&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;B3 下班，B1 上班&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>绿皮书 | 一部傲慢的反歧视电影</title>
+      <link>https://mogeko.me/2019/073/</link>
+      <pubDate>Wed, 12 Jun 2019 11:41:28 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/073/</guid>
+      <description>&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/073/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;《绿皮书》是一部反应美国 00 年代 (南北战争前) 白人与黑人种族关系的电影，它凭借出色的配乐，精湛的演技，以及反歧视的主题一举拿下了 2018 年的奥斯卡奖，然而他真的像他宣传的那样是在反种族歧视吗？&lt;/p&gt;
+
+&lt;p&gt;《绿皮书》讲述了一个意大利裔美国人托尼与非洲裔美国人唐雪莉之间的故事。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;托尼是一个吊儿郎当游手好闲的混混，在一家夜总会做侍者。这间夜总会因故要停业几个月，可托尼所要支付的房租和生活费不会因此取消，所以他的当务之急是去寻找另一份工作来填补这几个月的空缺。在这个节骨眼上，一位名叫唐雪莉的黑人钢琴家提出雇佣托尼。&lt;/p&gt;
+&lt;p&gt;唐雪莉即将开始为期八个星期的南下巡回演出，可是，那个时候南方对黑人的歧视非常的严重，于是托尼便成为了唐雪莉的司机兼保镖。一路上，两人迥异的性格使得他们之间产生了很多的矛盾，与此同时，唐雪莉在南方所遭受的种种不公平的对待也让托尼对种族歧视感到深恶痛绝。&lt;/p&gt;
+&lt;p style=&#34;overflow: hidden;&#34;&gt;&lt;span style=&#34;float: right;&#34;&gt; —— &lt;a href=&#34;https://movie.douban.com/subject/27060077/&#34;&gt;绿皮书 (豆瓣)&lt;/a&gt;&amp;ensp;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;托尼原本是一位种族主义者，通过各种遭遇最终成为了唐雪莉最重要的朋友，然后温情脉脉，岁月静好。如果仅从托尼的人物塑造来看本片无疑是成功的，然而他恶毒就恶毒在对唐雪莉的角色设定上：&lt;strong&gt;一位种族的叛徒。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;一个黑人，自己的民族受到压迫，他不参加民权活动，和家人闹翻，和自己的民族划清界限，说最标准的英语，从不听黑人音乐，对黑人的文化非常敌视，觉得美国人的生活方式才是最高雅的。他为了向美国人证明黑人也可以很高雅跑到美国最落后的地方表演……西洋乐？！&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;换做是你你会接受吗？一个标榜自己是美国人的美国华裔，反过来歧视中国人？！这就是绿皮书，一部傲慢的反歧视电影。&lt;/p&gt;
+
+&lt;p&gt;片中，唐说那些白人来听他表演只是为了装逼。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/073/screenshot.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;然而讽刺的是这部电影能得奖也完完全全是因为美国上流想标榜自己的高雅，是白左想装逼&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p style=&#34;overflow: hidden;&#34;&gt;弱小和无知不是生存的障碍，傲慢才是。&lt;span style=&#34;float: right;&#34;&gt; —— 刘慈欣, 《三体Ⅲ：死神永生》&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>我好像挖到个波兰蠢驴的小彩蛋！</title>
+      <link>https://mogeko.me/2019/072/</link>
+      <pubDate>Mon, 10 Jun 2019 12:32:58 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/072/</guid>
+      <description>&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/072/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;就在今天凌晨，CDPR 在 E3 微软发布会上展示了万众瞩目的《赛博朋克 2077》的&lt;a href=&#34;https://www.bilibili.com/video/av55130548&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;最新预告片&lt;/a&gt;，并开启了&lt;a href=&#34;https://www.cyberpunk.net/pre-order&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;预购&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;与新预告片一同发布的还有《赛博朋克 2077》典藏版的开箱视频：&lt;/p&gt;
+
+&lt;iframe src=&#34;//player.bilibili.com/player.html?aid=55134840&amp;cid=96409417&amp;page=1&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;width: 100%;height: 600px;&#34; &gt; &lt;/iframe&gt;
+
+&lt;p&gt;视频的开头有一段运行命令行代码的场景。因为一般电影中都喜欢都是随便弄的一些没有意义的“代码”来装个样子，所以我一般也不会去在意这些。但谁料今天早上网不好，正好就卡到一个代码的场景上，这段代码瞬间就引起了我的注意：这不是我平常敲的命令吗？！！！&lt;/p&gt;
+
+&lt;p&gt;立马把进度条拉了回去，仔仔细细的看了一遍，才看懂 CDPR 加这几个场景的用意。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;首先.用 &lt;code&gt;nmap -sV&lt;/code&gt; 扫描系统端口，发现 &lt;code&gt;2020&lt;/code&gt; 号端口 (暗示 2020 年正式发售)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;然后用 &lt;code&gt;sshscan&lt;/code&gt; 对 SSH 账号密码进行暴力破解，拿到&lt;strong&gt;用户名 (&lt;code&gt;samurai&lt;/code&gt;)&lt;/strong&gt;和&lt;strong&gt;密码 (&lt;code&gt;WhenItsReady&lt;/code&gt;)&lt;/strong&gt;
+&lt;img alt=&#34;USER&amp;PASSWD&#34; src=&#34;https://mogeko.github.io/blog-images/r/072/user_passwd.jpg&#34; &gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;然后ssh进行连接，登录到服务器&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ls -lt&lt;/code&gt; 列出所有文件&amp;hellip;&amp;hellip;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;CDPR 用短短几十秒的时间给我们讲述了一个黑客黑进 CDPR，偷走终于资料的故事。&lt;/p&gt;
+
+&lt;p&gt;不得不佩服 CDPR 对细节的用心程度。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;令我感兴趣的除了代码都是真的外还有命令中提到的&lt;strong&gt;主机地址 (&lt;code&gt;internal-cdprojektred.com&lt;/code&gt;)&lt;/strong&gt;、&lt;strong&gt;用户名&lt;/strong&gt;和&lt;strong&gt;密码&lt;/strong&gt;。既然命令都是真的，那么这些会不会也是真的呢？会不会真的能黑进去呢？！&lt;span class=&#34;spoiler&#34; &gt;想多了 QAQ&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;立马 PING 了一下，失败了。不过这也不能说明什么，说不定对面把 ICMP 的端口给封了。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ping -c 5 internal-cdprojektred.com
+PING internal-cdprojektred.com (46.101.148.249) 56(84) bytes of data.
+
+--- internal-cdprojektred.com ping statistics ---
+5 packets transmitted, 0 received, 100% packet loss, time 45ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;随后我又尝试了一下 SSH 登录，居然成功了！不过立马就断开了连接。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ssh -p 2020 samurai@internal-cdprojektred.com 
+samurai@internal-cdprojektred.com&#39;s password: 
+Connection closed by 46.101.148.249 port 2020
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;我想这应该是 CDPR 留的一个小小的彩蛋吧！&lt;/p&gt;
+
+&lt;p&gt;这么细节的地方都能做到完美，我这里说波兰蠢驴天下第一应该没人有意见吧 |・ω・｀)&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;spoiler&#34; &gt;还没有预定《赛博朋克 2077》的朋友，我相信你肯定是在等典藏版 |・ω・｀)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>永远的一</title>
+      <link>https://mogeko.me/2019/071/</link>
+      <pubDate>Fri, 07 Jun 2019 23:54:42 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/071/</guid>
+      <description>&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/071/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;今天是高考第一天，在家里沙发上坐，和朋友聊着天，聊些大学里的是是非非，一些有的没的，看到小刀做的视频，突然意识到自己已经毕业一年了。&lt;/p&gt;
+
+&lt;p&gt;翻出高中的毕业照，明明才毕业了一年，不知道为什么看着有些脸却叫不出名字，只能比对着下面标注的名字。&lt;/p&gt;
+
+&lt;p&gt;看到他们的脸，想起了高中的一些事：班里谁喜欢着谁，她和他分手了，她又找了一个女朋友什么等等的。突然很感慨，原来我是想念高中的生活的，虽然要早起，虽然会和别人吵架，虽然有写不完的作业，虽然食堂的饭菜比大学难吃很多，但是，还是想念曾经的一切啊！！&lt;/p&gt;
+
+&lt;p&gt;看着毕业照上同学的表情，突然想起班上的几对最终都没有走到最后。不禁唏嘘：曾经真心觉得般配的两个人如今却成了仇家。&lt;/p&gt;
+
+&lt;p&gt;感觉进了大学，有些事变了，有些人也变了，我也变了，曾经的我很任性，自己不认同的事情打死也不会去做，以前的我绝对不会想到今天的我居然会为了所谓的「人际关系」去讨好一个我不喜欢的人！即使受到了不公正的对待也不得不压下自己的怒火和若干脏话。我不知道应该说自己成长了，还是变懦弱了。&lt;/p&gt;
+
+&lt;p&gt;想起以前不知是在读者还是意林还是格言上看过的一段话，大致讲的是：「社会就是台大机器，每个人都是齿轮，大学就是把我们锋利的，不规则的棱角给磨平，当送上社会的时候就是那千千万万齿轮中的一个」，当时看到的时候心想怎么可能，老子就是要坚持个性，可是，现在，不是说没个性，只是渐渐的，没以前的那种不怕死的精神，渐渐的，臣服于这个赤裸裸，冷冰冰却又真真实实的社会。所以说看着以前的照片，想着以前的人，有种怀念，怀念好的坏的，怀念争吵的，开心的，怀念讨厌的，喜欢的，就是不想面对现在的。&lt;/p&gt;
+
+&lt;p&gt;只能说自己懦弱吧，怕踏上社会会适应不了，适应不了尔虞我诈，适应不了只是为了目的而来和交朋友，适应不了明明看他不爽，见面时还是要笑脸相迎，适应不了靠关系而不靠实力，靠颜值而不靠本事的潜规则……&lt;/p&gt;
+
+&lt;p&gt;所以说怀念以前大家随心所欲的那对方开玩笑而不会担心记恨，怀念只是因为破事而伤心，不管同学还是朋友都真心安慰你的那些时光，怀念以前……&lt;/p&gt;
+
+&lt;p&gt;不过我终将走上社会，面对形形色色的人，各式各样的难关，只能在这发发牢骚，希望引起共鸣，来纪念我此时此刻的心情。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>为 LeaveIt 主题添加阅读进度条</title>
+      <link>https://mogeko.me/2019/070/</link>
+      <pubDate>Tue, 04 Jun 2019 20:45:28 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/070/</guid>
+      <description>
+
+&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/070/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;前面写了篇文章中提到了&lt;a href=&#34;https://mogeko.me/2017/003/#%E9%A1%B6%E9%83%A8%E9%98%85%E8%AF%BB%E8%BF%9B%E5%BA%A6%E6%9D%A1&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;如何给 Hexo 主题添加阅读进度条&lt;/a&gt;，如今将博客换到 Hugo + LeaveIt 后一直想把这个特性移植过来，但因为博主太懒了，这个计划就一直被拖到了现在，直到今天终于搞定了。效果就像你现在看到的这样 (就上面的那条&lt;span style=&#34;color: #ef3982;&#34; &gt;粉色&lt;/span&gt;的进度条)。还是挺好看的吧？&lt;/p&gt;
+
+&lt;p&gt;理论上所有 Hugo 博客都可以通过相似的方法添加阅读进度条。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;首先将这一段代码插入到 &lt;code&gt;header&lt;/code&gt; 的模板中&lt;/p&gt;
+
+&lt;p&gt;这个模板在不同的主题中可能有所不同，LeaveIt 的 &lt;code&gt;header&lt;/code&gt; 在 &lt;code&gt;/layouts/partials/header.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;{{ if (and .IsPage (not .Params.notsb)) }}
+    &amp;lt;div class=&amp;quot;top-scroll-bar&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;分别插入到第 2 行和第 16 行，也就是如图所示的位置&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/070/top-scroll-bar_1.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;然后在&lt;code&gt;/assets/css/_custom.scss&lt;/code&gt; 文件中为我们的进度条添加样式&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;// 顶部阅读进度条
+.top-scroll-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    width: 0;
+    height: 3px;
+    background: #ef3982;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再然后，新建一个 js脚本 文件 &lt;code&gt;/assets/js/_custom.js&lt;/code&gt;，来控制我们的进度条。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// ==============================
+// Custom JavaScript
+// ==============================
+
+// 顶部阅读进度条
+$(document).ready(function () {
+  $(window).scroll(function(){
+    $(&amp;quot;.top-scroll-bar&amp;quot;).attr(&amp;quot;style&amp;quot;, &amp;quot;width: &amp;quot; + ($(this).scrollTop() / ($(document).height() - $(this).height()) * 100) + &amp;quot;%; display: block;&amp;quot;);
+  });
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后，使用 &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 标签将 js 脚本引入到博客中，使其生效。&lt;/p&gt;
+
+&lt;p&gt;在 &lt;code&gt;/layouts/partials/js.html&lt;/code&gt; 文件中添加以下内容，然后将 &lt;code&gt;$custom&lt;/code&gt; 加入到变量 &lt;code&gt;$vendorscript&lt;/code&gt; 中&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;{{ $custom := resources.Get &amp;quot;/js/_custom.js&amp;quot; }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如图所示&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/070/top-scroll-bar_2.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;现在用 Hugo 重新编译并部署博客，应该就可以看见阅读进度条了&lt;/p&gt;
+
+&lt;h2 id=&#34;相关文章&#34;&gt;相关文章&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mogeko.github.io/2018/018/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;使用 Hugo + GitHub Pages 搭建个人博客&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mogeko.github.io/2018/024/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;为 Hugo 添加谈笑风生区 (Gitalk)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mogeko.github.io/2018/028/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;使用 Travis CI 自动部署 Hugo 博客&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mogeko.github.io/2018/033/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;为 Hugo 博客添加字数统计&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mogeko.github.io/2018/025/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Leavelt 主题优化&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mogeko.github.io/2019/048/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;为博客添加独立域名&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mogeko.github.io/2019/056/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;为博客添加免费的 CDN (Cloudflare)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>我要去火星了！！</title>
+      <link>https://mogeko.me/2019/069/</link>
+      <pubDate>Fri, 31 May 2019 17:36:58 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/069/</guid>
+      <description>&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/069/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;还有一年就要去火星了，我会想念大家的 ( •̥́ ˍ •̀ू )&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/069/BoardingPass_MyNameOnMars2020.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;哈哈哈，给大家开个玩笑😂😂&lt;/p&gt;
+
+&lt;p&gt;这实际上是 NASA 发起的一项签名活动，只需要在&lt;a href=&#34;https://mars.nasa.gov/participate/send-your-name/mars2020&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;这个网站&lt;/a&gt; (可能需要梯子，因为有 reCaptcha) 登记你的&lt;strong&gt;姓名、邮编和电子邮箱地址&lt;/strong&gt;，NASA 就会通过「火星 2020」探测器将你的名字送到火星上去。&lt;/p&gt;
+
+&lt;p&gt;据说，NASA 的喷气推进实验室 (JPL) 会用电子束，将你的名字模刻到硅片上，每个名字只会占用一个小于人类头发丝 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1000&lt;/sub&gt; 的空间 (75 纳米)。因此，带去火星上的一个硅片上，就能写满 100 万个名字。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;今后大家都是即将在火星拥有姓名的人了，说话嚣张点 ✧(≖ ◡ ≖✿)&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GPG 的正确使用姿势</title>
+      <link>https://mogeko.me/2019/068/</link>
+      <pubDate>Thu, 30 May 2019 18:56:39 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/068/</guid>
+      <description>
+
+&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/068/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;这篇指南面向的是对 GPG 有一定基础的同学，如果你连 GPG 是什么都不知道的话可能需要先了解一些基础知识&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2013/07/gpg.html&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;GPG入门教程 - 阮一峰的网络日志&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;前面的&lt;a href=&#34;https://mogeko.me/2019/065/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;一篇文章&lt;/a&gt;提到了如果使用 GPG 创建密钥，以及如果使用 GPG 签名 Git Commit 和 Git Tag，但其中提到的使用方法实际上并不标准。&lt;/p&gt;
+
+&lt;p&gt;后来经过大量的学习与思考，总结出了这篇“最硬核”的 GPG 使用指南，你当然不需要完全照着文章中操作，但核心思想还是可以参考一下的。&lt;/p&gt;
+
+&lt;p&gt;虽说是“最硬核”的 GPG 使用指南，但我仍然会尽我所能用最通俗的语言让每个人都能看懂。&lt;/p&gt;
+
+&lt;p&gt;首先需要准备两个 U 盘，为了方便区分，就分别标注他们为 &lt;code&gt;0号U盘&lt;/code&gt; 和 &lt;code&gt;1号U盘&lt;/code&gt;。U 盘大小没有要求，50 M 都绰绰有余了 &lt;span class=&#34;spoiler&#34; &gt;现在应该买不到这样的 U 盘了吧 |・ω・｀)&lt;/span&gt;但是必须&lt;strong&gt;保证 U 盘安全无毒&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;核心思想&#34;&gt;核心思想&lt;/h2&gt;
+
+&lt;p&gt;其实本文的核心思想总结起来就一句话：&lt;strong&gt;我们应该使用且只使用子密钥，主密钥应该放在一个绝对安全的地方。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;创建密钥对&#34;&gt;创建密钥对&lt;/h2&gt;
+
+&lt;p&gt;让我们来创建一个新的 GPG 密钥对，&lt;strong&gt;强烈建议在无网的 Linux 虚拟机环境中操作&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;在&lt;a href=&#34;https://mogeko.me/2019/065/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;「使用 GPG 签名你的 Git Commit」&lt;/a&gt;这篇文章中，我们使用的是 &lt;code&gt;--gen-key&lt;/code&gt; 来生成 GPG 密钥对，这样可以快速的生成一个可用的密钥对，但有的细节性的设置却不好设置&lt;/p&gt;
+
+&lt;p&gt;这里我们使用 &lt;code&gt;--full-gen-key&lt;/code&gt; 来生成密钥对，首先选择密钥类型，选择 &lt;code&gt;1&lt;/code&gt; (默认) 即可&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg --full-gen-key
+gpg (GnuPG) 2.2.15; Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+请选择您要使用的密钥类型：
+   (1) RSA 和 RSA （默认）
+   (2) DSA 和 Elgamal
+   (3) DSA（仅用于签名）
+   (4) RSA（仅用于签名）
+您的选择是？ 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后选择密钥长度，没有特殊需求的话保持 &lt;code&gt;2048&lt;/code&gt; 的默认选项即可&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;RSA 密钥的长度应在 1024 位与 4096 位之间。
+您想要使用的密钥长度？(2048) 2048
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后设置密钥的有效期，因为我们需要长期使用，所以选择 &lt;code&gt;0&lt;/code&gt; ，密钥永不过期&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;请设定这个密钥的有效期限。
+         0 = 密钥永不过期
+      &amp;lt;n&amp;gt;  = 密钥在 n 天后过期
+      &amp;lt;n&amp;gt;w = 密钥在 n 周后过期
+      &amp;lt;n&amp;gt;m = 密钥在 n 月后过期
+      &amp;lt;n&amp;gt;y = 密钥在 n 年后过期
+密钥的有效期限是？(0) 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;确定后，依次输入姓名、电子邮件和注释 (可以不填)，然后选择 &lt;code&gt;o&lt;/code&gt; 确定&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GnuPG 需要构建用户标识以辨认您的密钥。
+
+真实姓名： Mogeko
+电子邮件地址： zhengjunyi@live.com
+注释： 
+您选定了此用户标识：
+    “Mogeko &amp;lt;zhengjunyi@live.com&amp;gt;”
+
+更改姓名（N）、注释（C）、电子邮件地址（E）或确定（O）/退出（Q）？ o
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后输入并确认你密钥的密码&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Set Password&#34; src=&#34;https://mogeko.me/blog-images/r/068/set-passwd_1.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Set Password&#34; src=&#34;https://mogeko.me/blog-images/r/068/set-passwd_2.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;在这个步骤中可以做些其他操作，因为&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;我们需要生成大量的随机字节。在质数生成期间做些其他操作（敲打键盘、移动鼠标、读写硬盘之类的）将会是一个不错的主意；这会让随机数发生器有更好的机会获得足够的熵
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果看到一下输出就说明生成成功了&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gpg: 密钥 71C861745213C7DC 被标记为绝对信任
+gpg: 吊销证书已被存储为‘/home/mogeko/.gnupg/openpgp-revocs.d/7E99AAF646B8B572979266C471C861745213C7DC.rev’
+公钥和私钥已经生成并被签名。
+
+pub   rsa2048 2019-05-30 [SC]
+      7E99AAF646B8B572979266C471C861745213C7DC
+uid                      Mogeko &amp;lt;zhengnyi@live.com&amp;gt;
+sub   rsa2048 2019-05-30 [E]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;创建子密钥&#34;&gt;创建子密钥&lt;/h2&gt;
+
+&lt;p&gt;我们刚刚生成的密钥名为 &lt;code&gt;71C861745213C7DC&lt;/code&gt;，这个同时也是我们的公钥。无论加密还是签名都可以直接使用这个公钥，但我们并不推荐这样做，因为如果直接使用这个公钥，而密钥又不小心被泄露了，我们就不得不吊销整个密钥。&lt;/p&gt;
+
+&lt;p&gt;为了解决这一问题，我们应该使用且&lt;strong&gt;只使用子密钥&lt;/strong&gt;，这样如果子密钥被泄露了，我们仅需要吊销被泄露的子密钥，这样主密钥仍是安全的，然后用主密钥生成新的子密钥继续使用。&lt;/p&gt;
+
+&lt;p&gt;生成主密钥对的时候 GPG 已经为我们生成了一对有效期与主密钥相同，&lt;code&gt;ElGamal&lt;/code&gt; (仅用于加密) 的子密钥对，但我们最好还是生成和使用一对新的子密钥。&lt;/p&gt;
+
+&lt;p&gt;想要生成子密钥，我们需要使用 GPG 选项 &lt;code&gt;--edit-key&lt;/code&gt; + &lt;code&gt;密钥名称&lt;/code&gt;编辑密钥，然后输入 GPG 命令 &lt;code&gt;addkey&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg --edit-key 71C861745213C7DC
+gpg (GnuPG) 2.2.15; Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+私钥可用。
+
+sec  rsa2048/71C861745213C7DC
+     创建于：2019-05-30  有效至：永不       可用于：SC  
+     信任度：绝对        有效性：绝对
+ssb  rsa2048/57440229D371DCD4
+     创建于：2019-05-30  有效至：永不       可用于：E   
+[ 绝对 ] (1). Mogeko &amp;lt;test@live.com&amp;gt;
+
+gpg&amp;gt; addkey
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后选择子密钥的密钥类型，根据实际需求选择即可&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;请选择您要使用的密钥类型：
+   (3) DSA（仅用于签名）
+   (4) RSA（仅用于签名）
+   (5) ElGamal（仅用于加密）
+   (6) RSA（仅用于加密）
+您的选择是？ 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;选择密钥长度，同样的默认 &lt;code&gt;2048&lt;/code&gt; 即可&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;RSA 密钥的长度应在 1024 位与 4096 位之间。
+您想要使用的密钥长度？(2048) 2048
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后选择密钥有效期，这里不推荐默认选项 &lt;code&gt;0&lt;/code&gt; (永不过期)，推荐使用选项 &lt;code&gt;1y&lt;/code&gt; (一年有效期)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;请设定这个密钥的有效期限。
+         0 = 密钥永不过期
+      &amp;lt;n&amp;gt;  = 密钥在 n 天后过期
+      &amp;lt;n&amp;gt;w = 密钥在 n 周后过期
+      &amp;lt;n&amp;gt;m = 密钥在 n 月后过期
+      &amp;lt;n&amp;gt;y = 密钥在 n 年后过期
+密钥的有效期限是？(0) 1y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;输入密钥的密码&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Verifcation&#34; src=&#34;https://mogeko.github.io/blog-images/r/068/verifcation.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;然后确认一下密钥信息，然后输入 &lt;code&gt;save&lt;/code&gt; 保存密钥&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sec  rsa2048/71C861745213C7DC
+     创建于：2019-05-30  有效至：永不       可用于：SC  
+     信任度：绝对        有效性：绝对
+ssb  rsa2048/57440229D371DCD4
+     创建于：2019-05-30  有效至：永不       可用于：E   
+ssb  rsa2048/8873AB36406A34F5
+     创建于：2019-05-30  有效至：2020-05-29  可用于：S   
+[ 绝对 ] (1). Mogeko &amp;lt;zhengjunyi@live.com&amp;gt;
+
+gpg&amp;gt; save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后 &lt;code&gt;8873AB36406A34F5&lt;/code&gt; 就是我们的子密钥名称，同时也是子公钥，平常使用的公钥也是这个&lt;/p&gt;
+
+&lt;h2 id=&#34;导出密钥-子密钥和吊销证书&#34;&gt;导出密钥、子密钥和吊销证书&lt;/h2&gt;
+
+&lt;p&gt;现在，我们准备的两个 U 盘终于可以派上用场了。&lt;/p&gt;
+
+&lt;p&gt;将 U 盘格式化 (文件系统最好选择 &lt;code&gt;fat32&lt;/code&gt;，以保证最好的兼容性)，然后将 U 盘挂载到虚拟机上 (如果使用了虚拟机的话)，我这里将 &lt;code&gt;0号U盘&lt;/code&gt;挂载到了 &lt;code&gt;/run/media/mogeko/USB0/&lt;/code&gt;，将 &lt;code&gt;1号U盘&lt;/code&gt;挂载到了 &lt;code&gt;/run/media/mogeko/USB1/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;然后导出 GPG 的密钥、子密钥和吊销证书。&lt;/p&gt;
+
+&lt;p&gt;使用以下命令导出密钥到 &lt;code&gt;0号U盘&lt;/code&gt;，然后输入密码&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg -o /run/media/mogeko/USB0/gpg_key --export-secret-keys 71C861745213C7DC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;使用以下命令导出子密钥到 &lt;code&gt;1号U盘&lt;/code&gt;，同样需要输入密码&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg -o /run/media/mogeko/USB1/gpg_key.sub --export-secret-subkeys 71C861745213C7DC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后导出吊销证书，可以使用以下命令生成&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg --generate-revocation 71C861745213C7DC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;不过实际上在生成密匙时就已经生成了一份吊销证书了，放在这个目录下面 &lt;code&gt;~/.gnupg/openpgp-revocs.d/&lt;/code&gt;，我们也可以直接将它移动到 &lt;code&gt;0号U盘&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mv ~/.gnupg/openpgp-revocs.d/2B452412DF8969D5682E279A71C861745213C7DC.rev /run/media/mogeko/USB0/revoke.rev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;总结一下，现在 &lt;code&gt;0号U盘&lt;/code&gt;里有 &lt;code&gt;gpg_key&lt;/code&gt; 和 &lt;code&gt;revoke.rev&lt;/code&gt;，现在 &lt;code&gt;1号U盘&lt;/code&gt;里有 &lt;code&gt;gpg_key.sub&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;分别卸载两个U盘，然后将 &lt;code&gt;0号U盘&lt;/code&gt;保存到一个&lt;strong&gt;绝对安全的地方&lt;/strong&gt;，例如银行的个人保险柜。&lt;/p&gt;
+
+&lt;h2 id=&#34;卸载密钥&#34;&gt;卸载密钥&lt;/h2&gt;
+
+&lt;p&gt;现在使用以下命令卸载刚刚生成的密钥&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg --delete-secret-keys 71C861745213C7DC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后清理吊销证书，将当前环境恢复到生成密钥前的样子。&lt;/p&gt;
+
+&lt;p&gt;如果是虚拟机的话就跟方便了，直接删除整个虚拟机。&lt;/p&gt;
+
+&lt;p&gt;为什么要卸载密钥呢？为了防止主密钥在使用过程中不小心被泄露，就像我刚刚说的：&lt;strong&gt;我们应该使用且只使用子密钥，主密钥应该放在一个绝对安全的地方。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;导入子密钥&#34;&gt;导入子密钥&lt;/h2&gt;
+
+&lt;p&gt;在断网的环境下，将 &lt;code&gt;1号U盘&lt;/code&gt;插入到需要使用 GPG 的电脑上。&lt;/p&gt;
+
+&lt;p&gt;使用以下命令将子密钥导入到本地，并输入密码&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg --import /run/media/mogeko/USB1/gpg_key.sub
+gpg: 密钥 71C861745213C7DC：公钥 “Mogeko &amp;lt;zhengjunyi@live.com&amp;gt;” 已导入
+gpg: 要迁移 ‘secring.gpg’，对每一张智能卡，执行：gpg --card-status
+gpg: 密钥 71C861745213C7DC：私钥已导入
+gpg: 处理的总数：1
+gpg:    未改变：1
+gpg: 读取的私钥：1
+gpg: 导入的私钥：1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;使用以下命令查看密钥&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg -K
+/home/mogeko/.gnupg/pubring.kbx
+-------------------------------
+sec#  rsa2048 2019-05-30 [SC]
+      7E99AAF646B8B572979266C471C861745213C7DC
+uid           [ 未知 ] Mogeko &amp;lt;zhengjunyi@live.com&amp;gt;
+ssb   rsa2048 2019-05-30 [E]
+ssb   rsa2048 2019-05-30 [S] [有效至：2020-05-29]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;sec&lt;/code&gt; 后面带 &lt;code&gt;#&lt;/code&gt;，表示我们安装的是子密钥，并且密钥不在本地。&lt;/p&gt;
+
+&lt;p&gt;这样就可以安心的使用了！&lt;/p&gt;
+
+&lt;h2 id=&#34;修改密钥的信任度&#34;&gt;修改密钥的信任度&lt;/h2&gt;
+
+&lt;p&gt;因为我们的密钥是从 U 盘导入进来的，所以 GPG 对于这个密钥的信任度是未知。&lt;/p&gt;
+
+&lt;p&gt;我们可以使用 GPG 选项 &lt;code&gt;--edit-key&lt;/code&gt; + &lt;code&gt;密钥名称&lt;/code&gt;编辑密钥，修改 GPG 对密钥的信任度&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg --edit-key 71C861745213C7DC
+gpg (GnuPG) 2.2.15; Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+私密子密钥可用。
+
+pub  rsa2048/71C861745213C7DC
+     创建于：2019-05-30  有效至：永不       可用于：SC  
+     信任度：未知        有效性：未知
+ssb  rsa2048/57440229D371DCD4
+     创建于：2019-05-30  有效至：永不       可用于：E   
+ssb  rsa2048/8873AB36406A34F5
+     创建于：2019-05-30  有效至：2020-05-29  可用于：S   
+[ 未知 ] (1). Mogeko &amp;lt;zhengjunyi@live.com&amp;gt;
+
+gpg&amp;gt; trust
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;输入 GPG 命令 &lt;code&gt;trust&lt;/code&gt;，然后根据实际情况修改 GPG 对于密钥的信任度&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pub  rsa2048/71C861745213C7DC
+     创建于：2019-05-30  有效至：永不       可用于：SC  
+     信任度：未知        有效性：未知
+ssb  rsa2048/57440229D371DCD4
+     创建于：2019-05-30  有效至：永不       可用于：E   
+ssb  rsa2048/8873AB36406A34F5
+     创建于：2019-05-30  有效至：2020-05-29  可用于：S   
+[ 未知 ] (1). Mogeko &amp;lt;zhengjunyi@live.com&amp;gt;
+
+请决定您对这名用户能否正确地验证其他用户密钥
+（通过查看护照，检查不同来源的的指纹等等）的相信程度
+
+  1 = 我不知道或不作答
+  2 = 我不相信
+  3 = 我勉强相信
+  4 = 我完全相信
+  5 = 我绝对相信
+  m = 回到主菜单
+
+您的决定是什么？ 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;信任度修改之后，在重启程序之前，所显示的密钥有效性不一定正确&lt;/p&gt;
+
+&lt;p&gt;因为我们只是修改了 GPG 对密钥的信任度，并没有修改密钥的元数据，所以直接使用 &lt;code&gt;quit&lt;/code&gt; 退出&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pub  rsa2048/71C861745213C7DC
+     创建于：2019-05-30  有效至：永不       可用于：SC  
+     信任度：绝对        有效性：未知
+ssb  rsa2048/57440229D371DCD4
+     创建于：2019-05-30  有效至：永不       可用于：E   
+ssb  rsa2048/8873AB36406A34F5
+     创建于：2019-05-30  有效至：2020-05-29  可用于：S   
+[ 未知 ] (1). Mogeko &amp;lt;zhengjunyi@live.com&amp;gt;
+请注意，在您重启程序之前，所显示的密钥有效性不一定正确。
+
+gpg&amp;gt; quit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;发送公钥到公钥服务器&#34;&gt;发送公钥到公钥服务器&lt;/h2&gt;
+
+&lt;p&gt;将公钥发送到公钥服务器上，方便别人取用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg --send-keys 71C861745213C7DC
+gpg: 正在发送密钥 71C861745213C7DC 到 hkps://hkps.pool.sks-keyservers.net
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>在博客中展示 GitHub Chart</title>
+      <link>https://mogeko.me/2019/067/</link>
+      <pubDate>Wed, 29 May 2019 22:03:42 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/067/</guid>
+      <description>&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/067/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;今天给大家介绍一个很有意思的网站：&lt;a href=&#34;https://ghchart.rshah.org/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;GitHub Chart API&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;更准确的说是一个很有趣的 API。它可以实时的将 GitHub Chart 信息转化成一张图片，就像这样&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;GitHub Chart&#34; src=&#34;https://ghchart.rshah.org/mogeko&#34; style=&#34;width: 100%;&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;正好可以方便我们在博客中展示我们的 GitHub Chart &lt;span class=&#34;spoiler&#34; &gt;顺便防止自己偷懒 _(:з」∠)_&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;使用方法也很简单，只需要在网址 &lt;code&gt;https://ghchart.rshah.org/&lt;/code&gt; 后跟上自己的 GitHub 用户名即可，例如我的&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;https://ghchart.rshah.org/mogeko
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这就是实时你展示 GitHub Chart 的图片的 URL 了，将这个 URL 放在 &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签里就可以在任意网页上展示了&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img alt=&amp;quot;GitHub Chart&amp;quot; src=&amp;quot;https://ghchart.rshah.org/mogeko&amp;quot; &amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果是在 Markdown 中，应该这么写&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![GitHub Chart](https://ghchart.rshah.org/mogeko)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>使用 ImgBot 无损压缩博客中的图片</title>
+      <link>https://mogeko.me/2019/066/</link>
+      <pubDate>Sun, 19 May 2019 01:16:34 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/066/</guid>
+      <description>
+
+&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;众所周知，GitHub 是最好的博客平台（误&lt;/p&gt;
+
+&lt;p&gt;像我一样的很多人都喜欢用 GitHub Pages 来部署自己的博客。而博客中难免会有很多的图片文件，而图片往往比纯字符组成的文档大得多，这可能会成为拖慢网站加载时间的重要诱因。为了解决这一问题，很多人会选择使用图床或者国内的 CDN，但这些方案都存在着各种各样的问题 (公共图床可能不稳定，私人图床和 CDN 都需要在公安局备案过的个人域名)。而且这样方案都是将提供图片的服务器搬到了国内，用户加载图片所消耗的流量仍然是原来那么多。&lt;/p&gt;
+
+&lt;p&gt;今天我就换一种思路来缓解这一问题：&lt;strong&gt;通过无损压缩在不减少图片质量的前提下减少图片的大小，从而实现加快加载速度减少流量消耗的目的。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;这一思路实现起来并不难，晚上也有很多无损压缩图片的软件或者网站，难的是让压缩图片这一过程自动化完成。今天介绍的这个服务是我目前找到的最方便最自动的免费方案了。&lt;/p&gt;
+
+&lt;h2 id=&#34;关于-imgbot&#34;&gt;关于 ImgBot&lt;/h2&gt;
+
+&lt;p&gt;今天的主角叫做 &lt;a href=&#34;https://imgbot.net&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;ImgBot&lt;/a&gt;，是一个无损压缩图片的服务。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;ImgBot Logo&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/imgbot_logo.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;它最厉害的地方在于它可以无缝的与 GitHub 集成在一起，只需要在 &lt;a href=&#34;https://github.com/marketplace/imgbot&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;GitHub Market&lt;/a&gt; 上添加了这个服务，ImgBot 就会自动递归扫描并压缩你的所以仓库中的图片文件，然后给你提一个 PR，当你确认无误后，将 PR 合并到相关分支上即可。&lt;/p&gt;
+
+&lt;p&gt;也就是说，你只需要检查并合并分支即可，剩下的事情都交给 ImgBot 来做。&lt;/p&gt;
+
+&lt;h2 id=&#34;安装-imgbot&#34;&gt;安装 ImgBot&lt;/h2&gt;
+
+&lt;p&gt;因为我已经安装了 ImgBot 了，所以文字与截图上的可能有点出入&lt;/p&gt;
+
+&lt;p&gt;首先来到 &lt;a href=&#34;https://github.com/marketplace/imgbot&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;GitHub Market&lt;/a&gt;，点击 &lt;code&gt;Set up a free trial&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;GitHub Market&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/github_market.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;然后选择 &lt;code&gt;Open Source&lt;/code&gt; (也就是免费的那个方案)，然后点击 &lt;code&gt;Install it for free&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Choose Plan&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/choose_plan.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;检查一下订单，点击 &lt;code&gt;Complete order and begin installation&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Review your order&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/review_order.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;确认一下 ImgBot 可以访问的仓库 (默认 All)，以及授予给 ImgBot 的权限，点击 &lt;code&gt;Install&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Install&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/install.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;看到这个页面就说明 ImgBot 服务已经成功的安装到你的 GitHub 账户上了&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Install Succses&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/install_succese.png&#34; &gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;使用-imgbot-压缩图片&#34;&gt;使用 ImgBot 压缩图片&lt;/h2&gt;
+
+&lt;p&gt;将 ImgBot 服务安装到你的 GitHub 账户上后，ImgBot 就会自动递归寻找并压缩 Git 仓库中的图片文件 (如果图片比较多，这一步可能回花费几天的时间)，压缩好后会向你提一个像这样的 PR&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Pull request&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/pr_exm.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;你可以点开 &lt;code&gt;Datails&lt;/code&gt; 查看压缩前后大小、压缩率等细节，确认无误后，点击 &lt;code&gt;Merge pull request&lt;/code&gt; 开始合并&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Merge pull request&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/merge_pull_request.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;输入 commit 信息，点击 &lt;code&gt;Confirm merge&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Confirm merge&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/confirm_merge.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;看到以下信息就说明合并成功了&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Marge Succes&#34; src=&#34;https://mogeko.github.io/blog-images/r/066/marge_succes.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;至此，图片压缩完毕&lt;/p&gt;
+
+&lt;h2 id=&#34;设置-imgbot&#34;&gt;设置 ImgBot&lt;/h2&gt;
+
+&lt;p&gt;根据 &lt;a href=&#34;https://imgbot.net/docs&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;ImgBot 的官方文档&lt;/a&gt;，我们可以通过在 Git 仓库的根目录下放置配置文件 &lt;code&gt;.imgbotconfig&lt;/code&gt; 来设置 ImgBot&lt;/p&gt;
+
+&lt;p&gt;目前有三个配置项：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;提交 PR 的频率：&lt;code&gt;&amp;quot;schedule&amp;quot;&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;选项：&lt;code&gt;daily&lt;/code&gt; | &lt;code&gt;weekly&lt;/code&gt; | &lt;code&gt;monthly&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;排除的文件：&lt;code&gt;&amp;quot;ignoredFiles&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;选项：被排除文件的路径，支持通配符&lt;code&gt;*&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;是否使用有损压缩方式 (压缩率更高)：&lt;code&gt;&amp;quot;aggressiveCompression&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;选项：&lt;code&gt;true&lt;/code&gt; | &lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以下是较为完整的例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-.imgbotconfig&#34;&gt;{
+    &amp;quot;schedule&amp;quot;: &amp;quot;daily&amp;quot;, // daily|weekly|monthly
+    &amp;quot;ignoredFiles&amp;quot;: [
+        &amp;quot;*.jpg&amp;quot;,                   // ignore by extension
+        &amp;quot;image1.png&amp;quot;,              // ignore by filename
+        &amp;quot;public/special_images/*&amp;quot;, // ignore by folderpath
+    ],
+    &amp;quot;aggressiveCompression&amp;quot;: &amp;quot;true&amp;quot; // true|false
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更多详情请参考 &lt;a href=&#34;https://imgbot.net/docs&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;ImgBot 的官方文档&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>使用 GPG 签名你的 Git Commit</title>
+      <link>https://mogeko.me/2019/065/</link>
+      <pubDate>Thu, 16 May 2019 11:53:23 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/065/</guid>
+      <description>
+
+&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/065/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;众所周知，如果用 GitHub 客户端或者在 GitHub 网页上操作 git 都会在 commits 中留下 &lt;code&gt;Verified&lt;/code&gt; 的标记&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Verified&#34; src=&#34;https://mogeko.github.io/blog-images/r/065/verified_1.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;这表示该 commit 是在 GitHub 上创建的，使用 GitHub 的 key 对这个提交进行了签名。&lt;/p&gt;
+
+&lt;p&gt;但 GitHub 客户端或者 GitHub 网页并不是签名 commit 的唯一方法，我们也可以通过 GnuPG (GPG) 来签名我们的 commit。&lt;/p&gt;
+
+&lt;p&gt;GPG 是一个非常出色的加密软件，当年斯诺登为了安全的将绝密文件交给记者，就用 GPG 对文件进行了加密。&lt;/p&gt;
+
+&lt;p&gt;通过 GPG 签名 commit 不仅可以获得 &lt;code&gt;Verified&lt;/code&gt; 的标识，更重要的是它能够有效的提高该 Git 仓库的安全性 (GPG 签名并不能提高开源软件本身的安全性)。因为它可以证明这个 commit 是通过你信任的的电脑提交的，而不是某个冒用你名号的黑客。这相当于赋予了 commit 一种不可更改性，即使黑客通过某种办法拿到了 Git 仓库的读写权，他也没有办法添加或者使用 &lt;code&gt;--force&lt;/code&gt; 修改任何带有你 GPG 签名的 commit。&lt;/p&gt;
+
+&lt;h2 id=&#34;安装-gpg&#34;&gt;安装 GPG&lt;/h2&gt;
+
+&lt;p&gt;一般的 GNU/Linux 都是自带得有 GPG，直接用就可以了。&lt;/p&gt;
+
+&lt;p&gt;Windows 版的 GPG 包含在 MinGW 或者中，而 Windows 版的 Git 基于 MinGW，所以说安装了 Git 就相当于安装了 GPG，可以直接在 Git Bash 中使用。&lt;/p&gt;
+
+&lt;p&gt;MacOS 可能需要单独安装一下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install gpg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;生成-gpg-密钥&#34;&gt;生成 GPG 密钥&lt;/h2&gt;
+
+&lt;p&gt;与 SSH 一样，GPG 采用的是非对称加密。&lt;/p&gt;
+
+&lt;p&gt;我们要想用 GPG 签名我们的 commit，首先需要一对 GPG 密钥。&lt;/p&gt;
+
+&lt;p&gt;如果没有的话，就使用以下命令生成一个 (按照提示输入姓名和邮箱地址)：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gpg --gen-key
+gpg (GnuPG) 2.2.15; Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+注意：使用 “gpg --full-generate-key” 以获得一个功能完整的密钥产生对话框。
+
+GnuPG 需要构建用户标识以辨认您的密钥。
+
+真实姓名： mogeko
+电子邮件地址： zhengjunyi@live.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后输入 &lt;code&gt;o&lt;/code&gt; 以确定&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;更改姓名（N）、注释（C）、电子邮件地址（E）或确定（O）/退出（Q）？ o
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后终端中会有如下提示&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;我们需要生成大量的随机字节。在质数生成期间做些其他操作（敲打键盘、移动鼠标、读写硬盘之类的）将会是一个不错的主意；这会让随机数发生器有更好的机会获得足够的熵
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;同时，会弹出一个界面要求你输入私匙密码并确定&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Set Password&#34; src=&#34;https://mogeko.github.io/blog-images/r/065/set-passwd.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;然后密钥就已经生成完毕了。记下密钥ID (就是形如 4089B828704223E7 的一串 16 进制数)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gpg: 密钥 4089B828704223E7 被标记为绝对信任
+gpg: 吊销证书已被存储为‘/home/mogeko/.gnupg/openpgp-revocs.d/DC4E79EFEE5E224A20E9013A4089B828704223E7.rev’
+公钥和私钥已经生成并被签名。
+
+pub   rsa2048 2019-05-16 [SC] [有效至：2021-05-15]
+      DC4E79EFEE5E224A20E9013A4089B828704223E7
+uid                      mogeko &amp;lt;zhengjunyi@live.com&amp;gt;
+sub   rsa2048 2019-05-16 [E] [有效至：2021-05-15]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;设置-git&#34;&gt;设置 Git&lt;/h2&gt;
+
+&lt;p&gt;首先设置一下 Git，让 Git 使用我们的密钥来对 commit 进行签名&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git config --global user.signingkey &amp;lt;密钥ID&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后设置 Git 全局使用该密钥加密 commit&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git config --global commit.gpgsign true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;顺便设置 Git 全局使用该密钥加密 tag&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git config --global tag.forcesignannotated true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;输出密钥&#34;&gt;输出密钥&lt;/h2&gt;
+
+&lt;p&gt;公钥文件 (.gnupg/pubring.gpg) 是以二进制的形式储存的，我们使用 &lt;code&gt;--armor&lt;/code&gt; 参数将它转换成 ASCII 码的形式&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gpg --armor --export &amp;lt;密钥ID&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;复制输出的公钥信息&lt;/p&gt;
+
+&lt;p&gt;同样的，&lt;code&gt;--export-secret-keys&lt;/code&gt; 则可以用来转换私匙，不过我们这里用不到 (&lt;strong&gt;千万不要把私匙透露给别人&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;gpg --armor --export-secret-keys &amp;lt;密钥ID&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;上传公钥至-github&#34;&gt;上传公钥至 GitHub&lt;/h2&gt;
+
+&lt;p&gt;来到 GitHub 的设置页面的 &lt;a href=&#34;https://github.com/settings/keys&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;SSH and GPG keys&lt;/a&gt;，点击 &lt;code&gt;New GPG key&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;New GPG key&#34; src=&#34;https://mogeko.github.io/blog-images/r/065/new_gpg_key.jpg&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;将刚刚复制的 GPG 公钥粘贴到对话框中，点击 &lt;code&gt;Add GPG ksy&lt;/code&gt; (可能回要求你输入 GitHub 密码)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Add GPG key&#34; src=&#34;https://mogeko.github.io/blog-images/r/065/add_gpg_key.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;至此以后你在这台计算机使用 &lt;code&gt;git pull&lt;/code&gt; 推送到 GitHub 的所有 commit 都带有 GPG 签名了&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Verified&#34; src=&#34;https://mogeko.github.io/blog-images/r/065/verified_2.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>安利一部日剧：半泽直树</title>
+      <link>https://mogeko.me/2019/064/</link>
+      <pubDate>Mon, 13 May 2019 17:27:55 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/064/</guid>
+      <description>&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/064/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;安利一部剧：半泽直树&amp;emsp;&lt;a href=&#34;https://movie.douban.com/subject/24697949/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;豆瓣：9.1&lt;/a&gt;&amp;emsp;&lt;a href=&#34;https://www.imdb.com/title/tt2930136/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;IMDB：8.5&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这是我看的第一部讲职场战的电视剧。本以为作为学生党对这一题材不会太感兴趣，结果一看就入迷了，欲罢不能的一口气追完了全季！&lt;/p&gt;
+
+&lt;p&gt;剧情精彩并且全员演技在线，除了半泽叔表情浮夸了一点（收个账至于吗😂😂😂&lt;/p&gt;
+
+&lt;p&gt;有人说看《纸牌屋》可以了解美国政府的运作原理，那么看这部剧则可以了解（日本）银行的运作原理，剧中反应的社会现象相当真实。仅从第一集这足以媲美很多大制作电影的剧情来看，你大概就能明白为什么日本这样一个资源匮乏，人口不足 2 亿的岛国能成为世界第三大经济体，因为它认真、精致、追求完美；用半泽父亲的话来说：&lt;strong&gt;「是这颗螺丝支撑着全日本」&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;另外还有句父亲的话经常被提起，&lt;strong&gt;「珍惜人与人之间的交往，不要像机器人一样工作」&lt;/strong&gt;，这一句堪称高贵的话，它体现了整部剧最想传达的价值观：尊重人的价值和创造。&lt;/p&gt;
+
+&lt;p&gt;但下属怼上司怼到土下坐的这种桥段是个正常人都知道是不可能的，一两个还好，整部剧一种在怼未免有些假（虽然看着很爽&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Poster&#34; src=&#34;https://mogeko.github.io/blog-images/r/064/poster_2.jpg&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;另外还有一点非常值得说的就是他的结局，行长的骚操作看得我一脸懵逼，想了两分钟。。。&lt;/p&gt;
+
+&lt;p&gt;卧槽，这剧神了！！！Σ(っ °Д °;)っ&lt;/p&gt;
+
+&lt;p&gt;以下是个人的一点解读：⚠剧透警告⚠&lt;/p&gt;
+
+&lt;div class=&#34;spoiler&#34;&gt;&lt;p&gt;关于对大和田的处理，眼镜已经说得很清楚了，就是为了缓和派系之争顺便拉拢一下大和田系的人。而对于半泽的处理就要复杂得多了。&lt;/p&gt;
+&lt;p&gt;我们先分析一下大和田跪完后半泽的处境：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;虽然大和田系被削弱了，但派系之争仍然存在&lt;/li&gt;
+&lt;li&gt;半泽除了两个基友以及一个欣赏他的直属上司（算半个）外基本没有别的什么政治资本了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;也就是说大和田系的人会排挤他，东京系会提防他，半泽失去了几乎所有的派系支持。留在银行内部，在所有同僚的敌视下，半泽寸步难行。将它调到两大派系鞭长莫及之处当部长，目的是为了保护半泽，似降实升，最终半泽绝对会当上行长的！&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;如果半泽不当行长，我给大家土下坐谢罪ヽ(｀⌒´メ)ノ&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>在 Docker 中使用 Archlinux 的折腾记录</title>
+      <link>https://mogeko.me/2019/063/</link>
+      <pubDate>Sat, 11 May 2019 14:48:52 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/063/</guid>
+      <description>
+
+&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/063/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;写一篇在 MacOS 上折腾 Docker 与 Archlinux 的文章，不想看废话可以直接看 &lt;a href=&#34;#%E4%BD%BF%E7%94%A8-dockerfile-%E6%89%93%E5%8C%85%E9%95%9C%E5%83%8F&#34;&gt;Dockerfile&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;目前我主要使用的操作系统是 MacOS 和 Manjaro，并且将会慢慢过度到 MacOS 上。但是我的生活学习又有点离不开 Linux。尽管 MacOS 也是类 Unit 的操作系统，能够兼容 POSIX，但毕竟不是正宗的 Linux。MacOS 也没有像 Windows 一样提供 WSL 这样的 Linux 子系统。所以想要在 MacOS 上运行 Linux 不得不使用 VirtualBox 这样臃肿的虚拟机，直到 Docker for Mac 的出现。&lt;/p&gt;
+
+&lt;p&gt;Docker for Mac 的本质仍然是虚拟机，但它使用的 Hyperkit 可要比 VirtualBox 轻量多了，而且根据目前的趋势来看，容器化技术将会在未来得到越来越多的应用。而 Docker 又正好是事实上的容器化标准了，尽早在生产学习生活中使用 Docker 有利于更好的理解“容器化的未来”。&lt;/p&gt;
+
+&lt;p&gt;话是这么说，但就最终的结果来看，在 Docker 中使用 Archlinux 和在 VirtualBox 中使用 Archlinux，体验上并没有什么本质上的不同，甚至还有诸多限制。把 Docker 当成虚拟机来用也不是“容器化的未来”所提倡的。但也不是不能用。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;并不为了使用 Archlinux 所以用了 Docker，而是因为要使用 Docker 所以顺便用 Docker 解决一下使用 Archlinux 的问题。&lt;/strong&gt;如果没有使用 Docker 的打算还是跟推荐用 VirtualBox 等虚拟机装 Archlinux 的方案。&lt;/p&gt;
+
+&lt;h2 id=&#34;尝试在打包一个可以用-ssh-登录的-archlinux-容器镜像&#34;&gt;尝试在打包一个可以用 ssh 登录的 Archlinux 容器镜像&lt;/h2&gt;
+
+&lt;p&gt;我的思路是这样的：先打包一个 Archlinux 的镜像，然后用 Docker 在 后台运行它，并暴露 &lt;code&gt;22&lt;/code&gt; 端口。最后在宿主机上用 &lt;code&gt;ssh&lt;/code&gt; 登录容器中的 Archlinux。&lt;/p&gt;
+
+&lt;p&gt;首先要解决的是镜像的问题，Archlinux 官方提供了一个从 Arch 内核剥离出来的 Docker 容器镜像：&lt;a href=&#34;https://hub.docker.com/r/archlinux/base&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;archlinux/base&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;但这个镜像实在是太基础了，像 &lt;code&gt;ssh&lt;/code&gt; 这些功能都没有。所以我准备先把 archlinux/base 跑起来，然后用 &lt;code&gt;pacman&lt;/code&gt; 装上我们需要的软件，最后再用 &lt;code&gt;docker commit&lt;/code&gt; 打包一个新的镜像。&lt;/p&gt;
+
+&lt;p&gt;首先拉取 archlinux/base，然后运行它：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker pull archlinux/base
+docker run -it -p 2222:22 --name arch archlinux/base
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在容器中用 &lt;code&gt;passwd&lt;/code&gt; 配置一下 root 的密码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;passwd root
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后用 &lt;code&gt;pacman&lt;/code&gt; 安装 &lt;code&gt;openssh&lt;/code&gt; 和 &lt;code&gt;sudo&lt;/code&gt;：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pacman -Syu openssh sudo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后配置一下 hostkeys：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rm -f /etc/ssh/ssh_*_key
+ssh-keygen -q -N &amp;quot;&amp;quot; -t dsa -f /etc/ssh/ssh_host_dsa_key
+ssh-keygen -q -N &amp;quot;&amp;quot; -t rsa -f /etc/ssh/ssh_host_rsa_key
+ssh-keygen -q -N &amp;quot;&amp;quot; -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key
+ssh-keygen -A
+sed -i &amp;quot;s/#*UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g&amp;quot; /etc/ssh/sshd_config
+sed -i &amp;quot;s/#*UsePAM.*/UsePAM no/g&amp;quot; /etc/ssh/sshd_config
+sed -i &amp;quot;s/#*PermitRootLogin.*/PermitRootLogin yes/g&amp;quot; /etc/ssh/sshd_config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后用 &lt;code&gt;systemd&lt;/code&gt; 启动 &lt;code&gt;sshd&lt;/code&gt;：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;systemctl start sshd.server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这时，问题出现了！因为 &lt;code&gt;systemd&lt;/code&gt; 的 PID 不是 1，所以无法正常工作。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;System has not been booted with systemd as init system (PID 1). Can&#39;t operate.
+Failed to connect to bus: Host is down
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;既然如此，那我们将 &lt;code&gt;systemd&lt;/code&gt; 作为容器中第一个被启动的应用那么 PID 不就是 1 了吗？&lt;/p&gt;
+
+&lt;p&gt;让我们用 &lt;code&gt;docker commit&lt;/code&gt; 命令将安装了 &lt;code&gt;openssh&lt;/code&gt; 的容器打包成镜像：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker commit -a &amp;quot;mogeko&amp;quot; -m &amp;quot;mogeko/archlinux&amp;quot; arch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后使用 &lt;code&gt;docker images&lt;/code&gt; 查看新镜像的 IMAGE ID，并用 &lt;code&gt;docker tag&lt;/code&gt; 给我们的容器重新起个名：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker tag &amp;lt;IMAGE ID&amp;gt; mogeko/archlinux
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后删掉原来的容器，并启动新的镜像：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker stop arch &amp;amp;&amp;amp; docker stop arch
+docker run -it -p 2222:22 --name arch mogeko/archlinux /lib/systemd/systemd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;结果仍然报错：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Failed to mount tmpfs at /run: Operation not permitted
+[!!!!!!] Failed to mount API filesystems.
+Freezing execution
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;转念一想，docker 的守护进程不就是容器的 init 吗？在容器中用 &lt;code&gt;systemd&lt;/code&gt;，那不是脱裤子放屁吗？&lt;/p&gt;
+
+&lt;p&gt;既然我们是想让 &lt;code&gt;sshd&lt;/code&gt; 在容器启动时启动，不如直接将 &lt;code&gt;/usr/bin/sshd&lt;/code&gt; 作为 PID 1 的任务&lt;/p&gt;
+
+&lt;p&gt;让我们删掉原来的容器重新起一个：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker stop arch &amp;amp;&amp;amp; docker stop arch
+docker run -it -p 2222:22 --name arch mogeko/archlinux /usr/bin/sshd -D
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;没有报错就说明启动成功了。&lt;/p&gt;
+
+&lt;p&gt;让我们用 &lt;code&gt;Ctrl + P + Q&lt;/code&gt; 将容器挂起 (在后台运行)，然后在宿主机上用 &lt;code&gt;ssh&lt;/code&gt; 进入的到容器中：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh -p 2222 root@127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;至此，一个可以用 &lt;code&gt;ssh&lt;/code&gt; 登录的 Archlinux 容器镜像就算是建好了。&lt;/p&gt;
+
+&lt;p&gt;但这还远远不够，还有很多可以优化的地方。&lt;/p&gt;
+
+&lt;h2 id=&#34;使用-dockerfile-打包镜像&#34;&gt;使用 Dockerfile 打包镜像&lt;/h2&gt;
+
+&lt;p&gt;使用 &lt;code&gt;docker commit&lt;/code&gt; 打包出来的镜像虽然实现了需要的功能，但每次启动都需要指定 &lt;code&gt;/usr/bin/sshd -D&lt;/code&gt;。实在是很不方便。&lt;/p&gt;
+
+&lt;p&gt;所以我编写了一个 Dockerfile 来打包镜像：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dockerfile&#34;&gt;FROM archlinux/base
+MAINTAINER mogeko
+EXPOSE 22
+RUN pacman -Syu sudo openssh --noconfirm --needed \
+ &amp;amp;&amp;amp; pacman -Scc --noconfirm \
+ &amp;amp;&amp;amp; rm -f /etc/ssh/ssh_*_key \
+ &amp;amp;&amp;amp; ssh-keygen -q -N &amp;quot;&amp;quot; -t dsa -f /etc/ssh/ssh_host_dsa_key \
+ &amp;amp;&amp;amp; ssh-keygen -q -N &amp;quot;&amp;quot; -t rsa -f /etc/ssh/ssh_host_rsa_key \
+ &amp;amp;&amp;amp; ssh-keygen -q -N &amp;quot;&amp;quot; -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key \
+ &amp;amp;&amp;amp; ssh-keygen -A \
+ &amp;amp;&amp;amp; sed -i &amp;quot;s/#*UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g&amp;quot; /etc/ssh/sshd_config \
+ &amp;amp;&amp;amp; sed -i &amp;quot;s/#*UsePAM.*/UsePAM no/g&amp;quot; /etc/ssh/sshd_config \
+ &amp;amp;&amp;amp; sed -i &amp;quot;s/#*PermitRootLogin.*/PermitRootLogin yes/g&amp;quot; /etc/ssh/sshd_config
+CMD [&amp;quot;/usr/bin/sshd&amp;quot;, &amp;quot;-D&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者你也可以直接 pull 我打包好的镜像：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker pull mogeko/archlinux
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;打包好镜像后直接在后台启动这一容器：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -d -p 2222:22 --name arch mogeko/archlinux
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后用 &lt;code&gt;docker exec&lt;/code&gt; 进入容器配置 root 密码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker exec -it arch bash
+passwd root
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后用 &lt;code&gt;ssh&lt;/code&gt; 登录：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh -p 2222 root@127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;新建用户&#34;&gt;新建用户&lt;/h2&gt;
+
+&lt;p&gt;果然还是不习惯直接使用 root 用户。&lt;/p&gt;
+
+&lt;p&gt;在容器中使用一下命令新建用户，并配置用户密码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;useradd -d /home/mogeko -m mogeko
+passwd mogeko
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后吧新建好的用户添加到 &lt;code&gt;sudoers&lt;/code&gt; 中&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;echo &#39;mogeko ALL=(ALL) ALL&#39; &amp;gt;&amp;gt; /etc/sudoers
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;退出容器，用新建的用户登录&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh -p 2222 mogeko@127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;挂载宿主机中的文件夹&#34;&gt;挂载宿主机中的文件夹&lt;/h2&gt;
+
+&lt;p&gt;使用 Docker 还要一个好处就是可以很方便的通过挂载宿主机上的文件夹来共享文件。&lt;/p&gt;
+
+&lt;p&gt;我最先想的是直接挂载宿主机整个 &lt;code&gt;/Users&lt;/code&gt; 目录到容器的 &lt;code&gt;/home&lt;/code&gt; 目录。后来想了想发现这样做很容易把 &lt;code&gt;$HOME&lt;/code&gt; 弄乱。而且 MacOS 中的 &lt;code&gt;$HOME&lt;/code&gt; 中装了 rust 等开发工具，这些应用并不能在 Linux 下运行，如果想要在 Linux 中安装这些软件的话，可能回发生冲突。&lt;/p&gt;
+
+&lt;p&gt;最终我还是将宿主机的 &lt;code&gt;$HOME&lt;/code&gt; 挂载到容器的 &lt;code&gt;/home/host&lt;/code&gt; 目录下，然后再用系统链接将需要共享的文件和文件夹链接到容器的 &lt;code&gt;$HOME&lt;/code&gt; 中。&lt;/p&gt;
+
+&lt;p&gt;首先，像 &lt;code&gt;Downloads&lt;/code&gt;、&lt;code&gt;Music&lt;/code&gt;、&lt;code&gt;Moveis&lt;/code&gt; 这些文件夹基本上是可以通用的，通通链接过来。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ln -s /home/host/Desktop /home/mogeko/Desktop
+ln -s /home/host/Documents /home/mogeko/Documents
+ln -s /home/host/Downloads /home/mogeko/Downloads
+ln -s /home/host/Library /home/mogeko/Library
+ln -s /home/host/Moveis /home/mogeko/Videos
+ln -s /home/host/Music /home/mogeko/Music
+ln -s /home/host/Pictures /home/mogeko/Pictures
+ln -s /home/host/Public /home/mogeko/Pubilc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后还有一下像 &lt;code&gt;.ssh&lt;/code&gt;、&lt;code&gt;.bashrc&lt;/code&gt; 这样的隐藏文件/文件夹可以按照实际情况配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ln -s /home/host/.bash_aliases /home/mogeko/.bash_aliases
+ln -s /home/host/.bashrc /home/mogeko/.bashrc
+ln -s /home/host/.ssh /home/mogeko/.ssh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;免密码登录-ssh&#34;&gt;免密码登录 ssh&lt;/h2&gt;
+
+&lt;p&gt;每次通过 ssh 登录 Docker 里的 Archlinux 都要输一遍密码太麻烦了，可以通过配置 &lt;code&gt;ssh&lt;/code&gt; 实现免密登录。&lt;/p&gt;
+
+&lt;p&gt;方法很简单，将宿主机的 &lt;code&gt;~/.ssh/id_rsa.pub&lt;/code&gt; 中的公匙添加到容器的 &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; 中即可。&lt;/p&gt;
+
+&lt;p&gt;因为我是容器和宿主机共用一个 &lt;code&gt;~/.ssh&lt;/code&gt;，所以我只需要在容器或者宿主机中执行下面这个命令就可以了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cat &#39;~/.ssh/id_rsa.pub&#39; &amp;gt;&amp;gt; &#39;~/.ssh/authorized_keys&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>同步 Linux 双系统的时间</title>
+      <link>https://mogeko.me/2019/062/</link>
+      <pubDate>Mon, 06 May 2019 16:49:36 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/062/</guid>
+      <description>
+
+&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/062&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;装过 Windows × Linux 双系统的同学都会知道，默认情况下 Windows 与 Linux 的时间是不同步的，原因在于 Windows 默认使用中国标准时间 (CST)，而类 Unix  系统则更喜欢使用世界协调时间 (UTC)，这两者都可以表示中国时区 (东八区) 的时间但并不兼容，相差正好 8 个小时。&lt;/p&gt;
+
+&lt;p&gt;以前用 Windows × Ubuntu 的双系统没怎么在意这个问题，因为 Ubuntu 是主力机 Windows 用的少，另外有 NTP 自动对时，也没出过什么问题。但换到 Windows × Manjaro 双系统后，出事了！QAQ
+Manjaro 默认没有开启 NTP，而 Windows 却对了时，导致今天后本机时间比实际时间快了 8 个小时。然后就发生了 git 提交到了未来这种诡异的情况。&lt;/p&gt;
+
+&lt;p&gt;今天说什么也得解决这一问题，而且解决方法并没有想象中这么难。大体上有两种思路：
+1. 让 Windows 使用 UTC (推荐)
+2. 让 Linux 使用 RTC (CST)&lt;/p&gt;
+
+&lt;h2 id=&#34;让-windows-使用-utc&#34;&gt;让 Windows 使用 UTC&lt;/h2&gt;
+
+&lt;p&gt;Windows 一般会将 BIOS 时间 (RTC) 设置为地方时。但实际上 Windows 也能处理 UTC，需要修改注册表。&lt;/p&gt;
+
+&lt;p&gt;使用 regedit，新建如下 &lt;code&gt;DWORD&lt;/code&gt; 值，并将其值设为十六进制的 1。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-reg&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation\RealTimeIsUniversal
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;也可以用管理员权限启动命令行来完成：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-reg&#34;&gt;reg add &amp;quot;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&amp;quot; /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果以上操作不起作用，并且你使用的是 Windows 64位系统，将 &lt;code&gt;DWORD&lt;/code&gt; 修改为 &lt;code&gt;QWORD&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果 Windows 要求根据夏令时更新时钟，可以允许。时钟仍然是 UTC，仅是显示时间会改变。&lt;/p&gt;
+
+&lt;p&gt;设置时间标准后需要重新启动才会生效。&lt;/p&gt;
+
+&lt;h2 id=&#34;让-linux-使用-rtc-cst&#34;&gt;让 Linux 使用 RTC (CST)&lt;/h2&gt;
+
+&lt;p&gt;另一个思路就是让 Linux 使用 CST，但 Linux 默认并不能直接使用 CST，不过我们可以设置 Linux 使用 BIOS 时间 (RTC)，其实就相当于让 Linux 使用 CST，缺点是用不了夏令时了，不过在中国也就无所谓了。&lt;/p&gt;
+
+&lt;p&gt;要想让 Linux 使用 RTC，首先要确保时区正确&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;timedatectl status
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果时区 (Time zone) 不是 &lt;code&gt;Asia/Shanghai&lt;/code&gt;，则使用下面的命令切换时区&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;timedatectl set-timezone Asia/Shanghai
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;命令会创建一个 &lt;code&gt;/etc/localtime&lt;/code&gt; 软链接，指向 &lt;code&gt;/usr/share/zoneinfo/&lt;/code&gt; 中的时区文件，如果手动创建此链接请确保是相对链接而不是绝对链接，参阅 &lt;a href=&#34;https://jlk.fjfi.cvut.cz/arch/manpages/man/archlinux.7&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;archlinux(7)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;然后在命令行中运行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;timedatectl set-local-rtc true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后使用以下命令查看状态&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;timedatectl status
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果 RTC 与 CST 相同就说明设置成功了。&lt;/p&gt;
+
+&lt;h2 id=&#34;manjaro-启动-ntp-自动对时&#34;&gt;Manjaro 启动 NTP 自动对时&lt;/h2&gt;
+
+&lt;p&gt;Manjaro 默认没有启动 NTP 自动对时，你需要手动配置与启动。&lt;/p&gt;
+
+&lt;p&gt;首先需要配置一下 &lt;code&gt;/etc/systemd/timesyncd.conf&lt;/code&gt;，取消 &lt;code&gt;#NTP=&lt;/code&gt; 的注释。然后填上 NTP 服务器的地址。这里推荐两组 NTP 服务器的域名&lt;/p&gt;
+
+&lt;p&gt;阿里巴巴 NTP&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;NTP=time1.aliyun.com time2.aliyun.com time3.aliyun.com time4.aliyun.com time5.aliyun.com time6.aliyun.com time7.aliyun.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Apple NTP&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;NTP=time1.apple.com time2.apple.com time3.apple.com time4.apple.com time5.apple.com time6.apple.com time7.apple.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后使用以下命令启动 NTP&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;timedatectl set-ntp true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后使用以下命令查看 NTP 的状态&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;timedatectl timesync-status
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>回形针手册 | 你的当代生活说明书</title>
+      <link>https://mogeko.me/2019/061/</link>
+      <pubDate>Sun, 05 May 2019 15:10:36 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/061/</guid>
+      <description>
+
+&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/061/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;今天要给大家安利的是一个网站：&lt;a href=&#34;https://ipaperclip.net&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;ipaperclip.net&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这是一个百科全书性质的网站，用他们自己的话来说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;回形针手册的目标是成为一个真正的当代生活百科全书&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img alt=&#34;回形针手册&#34; src=&#34;https://mogeko.github.io/blog-images/r/061/ipaperclip.net.png&#34; &gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;官方介绍&#34;&gt;官方介绍&lt;/h2&gt;
+
+&lt;iframe src=&#34;//player.bilibili.com/player.html?aid=50977820&amp;cid=89262219&amp;page=1&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;width: 100%;height: 600px;&#34; &gt; &lt;/iframe&gt;
+
+&lt;h2 id=&#34;lt-dr&#34;&gt;LT;DR&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;回形针手册是一本涵盖了日常生活所涉及方方面面的百科手册。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;回形针手册在国民经济行业分类的基础上设置了 &lt;strong&gt;1415 个条目，并分为 20 个一级条目，95 个二级条目，472 个三级条目&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;1415 个条目看起来似乎并不多，但你能想到的一切几乎都在这了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;1415 个条目&#34; src=&#34;https://mogeko.github.io/blog-images/r/061/introduction_1.jpg&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;与其他百科不同的是，&lt;strong&gt;回形针手册更像是一个“行业数据库”&lt;/strong&gt;。回形针手册会在每个条目中研究这个行业的结构、技术、原材料，整理国家标准、行业报告和企业财报，以此来帮助你了解一个行业的图景，理解这个世界的运作方式。&lt;/p&gt;
+
+&lt;p&gt;目前回形针手册已经完成了 60 个条目的基础编辑，但还远远不够。&lt;strong&gt;回形针手册需要得到更多人的帮助&lt;/strong&gt;，因此回形针手册采用了类似于 Wiki 百科一样的机制，任何人都可以编辑回形针手册的任何一个条目&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;编辑条目&#34; src=&#34;https://mogeko.github.io/blog-images/r/061/introduction_2.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;关于如何正确的编辑回形针手册，你可以在&lt;a href=&#34;https://ipaperclip.net/doku.php?id=wiki::%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E7%BC%96%E8%BE%91%E4%B8%80%E4%B8%AA%E6%9D%A1%E7%9B%AE&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;编辑指南&lt;/a&gt;中了解更多。&lt;/p&gt;
+
+&lt;p&gt;这 1415 个条目不是一个很快就可以完成的目标，它需要 5 年甚至更长的时间，我们才能看到它真正的样子。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;回形针手册将遵守 &lt;a href=&#34;https://creativecommons.org/choose/zero/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;CC0 协议&lt;/a&gt;&lt;/strong&gt;，简单来说就是回形针手册中的内容在世界范围内免受著作权的限制性规定，属于公共领域 (Public Domain)。所有的内容都可以被自由的复制，修改和分发。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;CC0&#34; src=&#34;https://mogeko.github.io/blog-images/r/061/introduction_3.jpg&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;另外需要注意的是，&lt;strong&gt;虽然回形针手册具有很强的公益性质，但仍然是属于一种商业行为。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;干燥工厂&#34; src=&#34;https://mogeko.github.io/blog-images/r/061/introduction_4.jpg&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>如何将 Home 目录下的文件夹设置为英文</title>
+      <link>https://mogeko.me/2019/060/</link>
+      <pubDate>Fri, 03 May 2019 10:35:41 +0800</pubDate>
+      
+      <guid>https://mogeko.me/2019/060/</guid>
+      <description>&lt;!-- 
+&lt;img alt=&#34;&#34; src=&#34;https://mogeko.github.io/blog-images/r/060/&#34; &gt;
+&lt;span class=&#34;spoiler&#34; &gt;&lt;/span&gt;
+&amp;emsp;&amp;emsp;
+ --&gt;
+
+&lt;p&gt;安装 GNU/Linux 系统后，如果你的系统语言是中文，你的 Home 目录就可能回变成这样：&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Chinese&#34; src=&#34;https://mogeko.github.io/blog-images/r/060/cn-mode.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;然后每次想要进入“下载”时，你需要在终端中输入：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd ~/下载
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;想要去“下载”目录居然还要切换一遍输入法？这相当的不科学。&lt;/p&gt;
+
+&lt;p&gt;在网上搜了一下，很多文章给出的方法都是将系统语言切换到英文，再切换回来。这样也能解决问题，但是有点脱裤子放屁的感觉。&lt;/p&gt;
+
+&lt;p&gt;然后我又查了一下万能的 &lt;a href=&#34;https://wiki.archlinux.org/index.php/XDG_user_directories_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Archlinux wiki&lt;/a&gt;，果然有更好的方法！&lt;/p&gt;
+
+&lt;p&gt;实际上 Home 目录下的文件夹如何如何显示是由本地的 &lt;code&gt;~/.config/user-dirs.dirs&lt;/code&gt; 和全局的 &lt;code&gt;/etc/xdg/user-dirs.defaults&lt;/code&gt; 配置文件所控制，我们只需要更改 &lt;code&gt;~/.config/user-dirs.dirs&lt;/code&gt;  就可以将 Home 目录的文件夹改成英文的。&lt;/p&gt;
+
+&lt;p&gt;首先打开 &lt;code&gt;~/.config/user-dirs.dirs&lt;/code&gt;：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dirs&#34;&gt;# This file is written by xdg-user-dirs-update
+# If you want to change or add directories, just edit the line you&#39;re
+# interested in. All local changes will be retained on the next run.
+# Format is XDG_xxx_DIR=&amp;quot;$HOME/yyy&amp;quot;, where yyy is a shell-escaped
+# homedir-relative path, or XDG_xxx_DIR=&amp;quot;/yyy&amp;quot;, where /yyy is an
+# absolute path. No other format is supported.
+# 
+XDG_DESKTOP_DIR=&amp;quot;$HOME/桌面&amp;quot;
+XDG_DOWNLOAD_DIR=&amp;quot;$HOME/下载&amp;quot;
+XDG_TEMPLATES_DIR=&amp;quot;$HOME/模板&amp;quot;
+XDG_PUBLICSHARE_DIR=&amp;quot;$HOME/公共&amp;quot;
+XDG_DOCUMENTS_DIR=&amp;quot;$HOME/文档&amp;quot;
+XDG_MUSIC_DIR=&amp;quot;$HOME/音乐&amp;quot;
+XDG_PICTURES_DIR=&amp;quot;$HOME/图片&amp;quot;
+XDG_VIDEOS_DIR=&amp;quot;$HOME/视频&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;果然是 &lt;code&gt;~/.config/user-dirs.dirs&lt;/code&gt; 在捣鬼！我们将这个文件改成这样：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dirs&#34;&gt;# This file is written by xdg-user-dirs-update
+# If you want to change or add directories, just edit the line you&#39;re
+# interested in. All local changes will be retained on the next run.
+# Format is XDG_xxx_DIR=&amp;quot;$HOME/yyy&amp;quot;, where yyy is a shell-escaped
+# homedir-relative path, or XDG_xxx_DIR=&amp;quot;/yyy&amp;quot;, where /yyy is an
+# absolute path. No other format is supported.
+# 
+XDG_DESKTOP_DIR=&amp;quot;$HOME/Desktop&amp;quot;
+XDG_DOWNLOAD_DIR=&amp;quot;$HOME/Downloads&amp;quot;
+XDG_TEMPLATES_DIR=&amp;quot;$HOME/Templates&amp;quot;
+XDG_PUBLICSHARE_DIR=&amp;quot;$HOME/Public&amp;quot;
+XDG_DOCUMENTS_DIR=&amp;quot;$HOME/Documents&amp;quot;
+XDG_MUSIC_DIR=&amp;quot;$HOME/Music&amp;quot;
+XDG_PICTURES_DIR=&amp;quot;$HOME/Pictures&amp;quot;
+XDG_VIDEOS_DIR=&amp;quot;$HOME/Videos&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后将 Home 目录下的文件全部重命名：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ mv $HOME/桌面 $HOME/Desktop
+$ mv $HOME/下载 $HOME/Downloads
+$ mv $HOME/模板 $HOME/Templates
+$ mv $HOME/公共 $HOME/Public
+$ mv $HOME/文档 $HOME/Documents
+$ mv $HOME/音乐 $HOME/Music
+$ mv $HOME/图片 $HOME/Pictures
+$ mv $HOME/视频 $HOME/Videos
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后重启。&lt;/p&gt;
+
+&lt;p&gt;如果不出意外的话应该就可以看见“英文版”的 Home 目录了&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;English&#34; src=&#34;https://mogeko.github.io/blog-images/r/060/en-mode.png&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;  ·End·  &lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
